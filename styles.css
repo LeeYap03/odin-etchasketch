@@ -7,14 +7,18 @@
 body {
   background-color: #0b0e14;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 header {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  height: 10vh;
-  margin: 12px;
+  min-height: 10vh;
+  padding-bottom: 8px;
 }
 
 #header-title {
@@ -24,6 +28,8 @@ header {
 #btn-new-grid {
   width: 10%;
   height: 50%;
+  min-width: 70px;
+  min-height: 40px;
   cursor: pointer;
   border: none;
   border-radius: 8px;
@@ -34,7 +40,7 @@ header {
 
 #grid-container {
   display: flex;
-  height: calc(90vh - 32px);
+  height: min(75vh, 90vw);
   aspect-ratio: 1 / 1;
   border: solid 1px #80808040;
   margin: auto;
